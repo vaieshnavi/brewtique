@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brewtique | Cozy Coffee Haven</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&family=Dancing+Script&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Chopin Script';
+      src: url('fonts/ChopinScript.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    :root {
+      --primary: #7C444F;
+      --secondary: #9F5255;
+      --accent: #E16A54;
+      --warm: #F39E60;
+      --light: #FBDB93;
+      --deep: #BE5B50;
+      --rich: #8A2D3B;
+      --dark: #641B2E;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+    }
+    header {
+      background: url('https://i.pinimg.com/736x/92/4a/df/924adf295c93e16228f7a16001cfee9d.jpg') center/cover no-repeat;
+      padding: 3rem 1rem;
+      text-align: center;
+      color: #fff;
+      text-shadow: 2px 2px 6px #000;
+    }
+    header h1 {
+      font-family: 'Chopin Script', cursive;
+      font-size: 4.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      text-align: center;
+      background-color: var(--primary);
+      padding: 0.75rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Playfair Display', serif;
+      transition: transform 0.3s;
+    }
+    nav a:hover {
+      color: var(--light);
+      transform: scale(1.1);
+    }
+    .hero {
+      background: url('https://i.pinimg.com/736x/d4/16/20/d416207123d2be6b2f9a3606c3a62732.jpg') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+      font-size: 2.5rem;
+      font-family: 'Dancing Script', cursive;
+      transition: background-position 0.5s ease-in-out;
+    }
+    .hero:hover {
+      background-position: bottom;
+    }
+    section {
+      padding: 2.5rem;
+    }
+    h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: var(--rich);
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.6rem 0;
+      border-bottom: 1px dashed var(--secondary);
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+    .menu-item:hover {
+      background-color: var(--warm);
+      color: white;
+      padding-left: 1rem;
+      transition: 0.3s;
+    }
+    .contact, footer {
+      background-color: var(--accent);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    footer p {
+      margin: 0;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Brewtique</h1>
+    <p>Where Every Sip Feels Like Home</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#story">Our Story</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Visit Us</a>
+  </nav>
+
+  <div class="hero">
+    Cozy Moments, One Cup at a Time
+  </div>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-item"><span>Espresso</span><span>₹120</span></div>
+    <div class="menu-item"><span>Cappuccino</span><span>₹150</span></div>
+    <div class="menu-item"><span>Latte</span><span>₹160</span></div>
+    <div class="menu-item"><span>Mocha</span><span>₹180</span></div>
+    <div class="menu-item"><span>Hot Chocolate</span><span>₹140</span></div>
+    <div class="menu-item"><span>Herbal Tea</span><span>₹100</span></div>
+    <div class="menu-item"><span>Freshly Baked Croissant</span><span>₹90</span></div>
+    <div class="menu-item"><span>Blueberry Muffin</span><span>₹110</span></div>
+    <div class="menu-item"><span>Chocolate Chip Cookie</span><span>₹70</span></div>
+  </section>
+
+  <section id="story">
+    <h2>Our Story</h2>
+    <p style="max-width: 700px; margin: auto; text-align: center; font-size: 1.1rem;">At Brewtique, we're not just serving coffee; we're brewing memories. Inspired by the aroma of home kitchens and the warmth of a shared laugh, we created a space where every corner whispers comfort. Come stay a while, and sip into something cozy.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://i.pinimg.com/736x/3c/ea/93/3cea93df9337a6b346f30c11b2ce3348.jpg" alt="Cozy coffee counter">
+      <img src="https://i.pinimg.com/736x/01/26/27/0126279364d4e54fc3b77f2b5ff4500b.jpg" alt="Latte art on a table">
+      <img src="https://i.pinimg.com/736x/0b/5b/01/0b5b01a3bd907835abfebafd601f496d.jpg" alt="Rustic seating area">
+      <img src="https://i.pinimg.com/736x/8c/c6/7b/8cc67b2904b4a313d2d80ece2a598f43.jpg" alt="Warm bakery and cafe interior">
+      <img src="https://i.pinimg.com/736x/b0/82/1a/b0821af5c10355b72670cef6de664c7a.jpg" alt="Table by the window">
+      <img src="https://i.pinimg.com/736x/18/32/fa/1832fabf07148e90c6ed1a2284ddb809.jpg" alt="Ambient lighting cafe view">
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Visit Us</h2>
+    <p>Pune, Maharashtra</p>
+    <p>Email: contact@brewtique.in</p>
+    <p>Instagram: @brewtique.cafe</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Brewtique | Crafted with love in Pune</p>
+  </footer>
+</body>
+</html>
